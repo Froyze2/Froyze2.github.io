@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин телефонов</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .phone-card {
-            transition: left 0.3s ease; 
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -30,23 +25,23 @@
         <section class="featured-phones">
             <h2>Популярные телефоны</h2>
             <div class="phone-grid">
-                <div class="phone-card animated-card" data-move="10">
+                <div class="phone-card">
                     <img src="Asus ROG Phone 6.jpg" alt="Смартфон ASUS ROG Phone 6">
                     <h3>Смартфон ASUS ROG Phone 6 16/512 ГБ Global, Dual nano SIM, черный</h3>
                     <p class="price">Цена: 90000 руб.</p>
-                    <a href="product1.html"class="button">Подробнее</a>
+                    <a href="product1.html" class="button">Подробнее</a>
                 </div>
-                <div class="phone-card animated-card" data-move="15">
+                <div class="phone-card">
                     <img src="Apple iPhone 15 Pro Max.jpg" alt="Смартфон Apple iPhone 15 Pro Max">
                     <h3>Смартфон Apple iPhone 15 Pro Max 1 ТБ, Dual: nano SIM + eSIM, White Titanium / Белый Титан</h3>
                     <p class="price">Цена: 115000 руб.</p>
-                    <a href="product2.html"class="button">Подробнее</a>
+                    <a href="product2.html" class="button">Подробнее</a>
                 </div>
-                <div class="phone-card animated-card" data-move="5">
+                <div class="phone-card">
                     <img src="Samsung Galaxy S24 Ultra.jpg" alt="Смартфон Samsung Galaxy S24 Ultra">
                     <h3>Смартфон Samsung Galaxy S24 Ultra 12/256 ГБ, Dual nano SIM, Titanium Violet</h3>
                     <p class="price">Цена: 85000 руб.</p>
-                    <a href="product3.html"class="button">Подробнее</a>
+                    <a href="product3.html" class="button">Подробнее</a>
                 </div>
             </div>
         </section>
@@ -54,25 +49,5 @@
     <footer>
         <p>&copy; Ильин Никита</p>
     </footer>
-    <script>
-        const animatedCards = document.querySelectorAll('.animated-card');
-
-        function moveCard(card, distance) {
-            card.style.position = 'relative';
-            card.style.left = distance + 'px';
-        }
-
-        function resetCard(card) {
-            card.style.position = 'static';
-            card.style.left = '0px';
-        }
-
-        animatedCards.forEach(card => {
-            const moveDistance = card.dataset.move;
-
-            card.addEventListener('mouseover', () => moveCard(card, moveDistance));
-            card.addEventListener('mouseout', () => resetCard(card));
-        });
-    </script>
 </body>
 </html>
