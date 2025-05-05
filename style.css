@@ -1,226 +1,143 @@
-/* ==========================================================================
-   Общие стили
-   ========================================================================== */
-
-   body {
-    font-family: 'Arial', sans-serif;
+/* ===== ГЛОБАЛЬНЫЕ СТИЛИ И ПЕРЕМЕННЫЕ ===== */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+  }
+  
+  /* ===== БАЗОВЫЕ СТИЛИ ===== */
+  * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-/* ==========================================================================
-   Шапка сайта
-   ========================================================================== */
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+  }
+  
+  /* ===== ШАПКА И НАВИГАЦИЯ ===== */
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
+  }
+  
+  header h1 {
     margin: 0;
-}
-
-/* ==========================================================================
-   Навигация
-   ========================================================================== */
-
-nav {
-    background-color: #444;
-    color: #fff;
-    padding: 0.5rem 0;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
+    font-size: 2.2rem;
+  }
+  
+  nav {
+    background-color: var(--dark-color);
+    padding: 0.8rem 0;
+  }
+  
+  nav a {
+    color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.3rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: var(--transition);
     display: inline-block;
-}
-
-nav a:hover {
-    background-color: #555;
-}
-
-/* ==========================================================================
-   Основной контент
-   ========================================================================== */
-
-main {
+  }
+  
+  nav a:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* ===== ОСНОВНОЕ СОДЕРЖИМОЕ ===== */
+  main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
     flex: 1;
-}
-
-/* ==========================================================================
-   Секция приветствия (Главная страница)
-   ========================================================================== */
-
-.hero {
-    background-color: #fff;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-}
-
-/* ==========================================================================
-   Секция популярных телефонов (Главная страница)
-   ========================================================================== */
-
-.featured-phones {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* ==========================================================================
-   Сетка телефонов (Главная и Каталог)
-   ========================================================================== */
-
-.phone-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
-    gap: 2rem;
-}
-
-/* ==========================================================================
-   Карточка телефона (Главная и Каталог)
-   ========================================================================== */
-
-.phone-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-    position: relative; /* Для позиционирования */
-}
-
-.phone-card:hover {
-    transform: translateY(-5px); /* Небольшой сдвиг вверх при наведении */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-/* ==========================================================================
-   Одинаковые размеры изображения телефона (Главная и Каталог)
-   ========================================================================== */
-.phone-card .image-container {
-    width: 100%;
-    height: 200px; /* Фиксированная высота */
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    display: flex;            /* Используем flexbox для центрирования */
-    justify-content: center;  /* Горизонтальное центрирование (если нужно) */
-    align-items: center;      /* Вертикальное центрирование */
-}
-/* ==========================================================================
-   Страница "Описание товара" (product1.html, product2.html и т.д.)
-   ========================================================================== */
-
-.product-details {
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.product-details h2 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.product-details img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    display: block;          /* Чтобы изображение не "прилипало" к тексту */
-    margin: 0 auto;             /*Центрирование изображения*/
-}
-
-.product-details p {
-    margin-bottom: 1rem;
-}
-
-.product-details ul {
-    list-style: disc;
-    margin-left: 2rem;
-}
-/* ==========================================================================
-   Картинка телефонов
-   ========================================================================== */
-.phone-card img {
-    max-width: 100%;          /* Максимальная ширина изображения */
-    max-height: 100%;         /* Максимальная высота изображения */
-    object-fit: contain;       /* Помещает изображение в контейнер, сохраняя пропорции */
-    border-radius: 0;
-}
-.price {
-    font-weight: bold;
-    color: #e44d26; /* Акцентный цвет для цены */
-}
-
-/* ==========================================================================
-   Подвал сайта
-   ========================================================================== */
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    width: 100%;
-}
-
-/* ==========================================================================
-   Каталог
-   ========================================================================== */
-.catalog {
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.catalog h2 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-/* ==========================================================================
-   Кнопка "Подробнее"
-   ========================================================================== */
-
-.button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff; /* Синий цвет */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
-}
-
-.button:hover {
-    background-color: #0056b3; /* Более темный синий цвет при наведении */
-}
-
-  main {
-        padding-top: 120px; /*  Добавляем отступ, чтобы контент не перекрывался шапкой. Значение может быть другим, в зависимости от высоты шапки.*/
   }
-}
+  
+  /* ===== КАРТОЧКИ ТОВАРОВ (ОБЩИЕ) ===== */
+  .phone-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  .phone-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  .phone-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .phone-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+  }
+  
+  /* ===== КНОПКИ ===== */
+  .button {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+  }
+  
+  .button:hover {
+    background: #2980b9;
+  }
+  
+  /* ===== ПОДВАЛ ===== */
+  footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+  }
+  
+  /* ===== АДАПТИВНОСТЬ ===== */
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav a {
+      margin: 0.3rem 0;
+      width: 100%;
+      max-width: 200px;
+    }
+    
+    .phone-grid {
+      grid-template-columns: 1fr;
+    }
+  }
