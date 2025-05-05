@@ -3,8 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samsung Galaxy S24 Ultra - Подробная информация</title>
+    <title>Samsung Galaxy S24 Ultra | Магазин телефонов</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Общие стили для всех продуктовых страниц */
+        .product-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .product-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .product-title {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .product-image {
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .product-badge {
+            background: #1428a0;
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .product-price {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin: 1.5rem 0;
+            font-weight: bold;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .spec-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .spec-category {
+            color: #7f8c8d;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .buy-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .contact-info {
+            background: #e8f4fd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            display: none;
+        }
+        
+        #product-contact-toggle:checked ~ .contact-info {
+            display: block;
+        }
+        
+        .full-description {
+            margin-top: 3rem;
+            line-height: 1.7;
+        }
+        
+        @media (max-width: 768px) {
+            .product-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .product-image {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,115 +119,80 @@
         </nav>
     </header>
 
-    <main>
-        <section class="product-details">
-            <h2>Смартфон Samsung Galaxy S24 Ultra 12/256 ГБ, Dual nano SIM, Titanium Violet</h2>
-            <img src="Samsung Galaxy S24 Ultra.jpg" alt="Samsung Galaxy S24 Ultra">
-            <p><strong>Характеристики:</strong>Артикул Маркета
-                51042171314
-                Бренд
-                Samsung
-                Цвет товара
-                Titanium Violet
-                Версия
-                для других стран
-                Версия ОС на начало продаж
-                Android 14
-                Тип корпуса
-                классический
-                Материал корпуса
-                металл
-                Степень защиты
-                IP68
-                Количество SIM-карт
-                Dual nano SIM
-                Вес
-                232 г
-                Размеры (ШxВxТ)
-                79x162.3x8.6 мм
-                
-                Экран
-                Дисплей
-                6.8", Dynamic AMOLED 2X
-                Особенности экрана
-                сенсорный экран, цветной экран
-                Частота обновления экрана
-                120 Гц
-                
-                Мультимедийные возможности
-                Функции камеры
-                основная камера, тыловая вспышка, фронтальная камера
-                Количество основных (тыловых) камер
-                4
-                Разрешение основной камеры
-                200 МП
-                Характеристики основной камеры
-                OIS F1.7, FOV 85˚
-                Характеристики основной камеры 2
-                12MP, F2.2, FOV 120˚
-                Характеристики основной камеры 3
-                50MP, 5x Optical Zoom, OIS F3.4, FOV 22˚
-                Характеристики основной камеры 4
-                10MP, 3x Optical Zoom, OIS F2.4, FOV 36˚
-                Макс. разрешение видео
-                7680x4320
-                Разрешение фронтальной камеры
-                12 МП
-                Выход на наушники
-                USB Type-C
-                
-                Связь
-                Стандарт связи
-                4G LTE, 5G
-                Беспроводные интерфейсы
-                Bluetooth, NFC, Wi-Fi
-                Стандарт Wi-Fi
-                802.11be
-                Стандарт Bluetooth
-                5.3
-                Геопозиционирование
-                BeiDou, GPS, Galileo, QZSS, ГЛОНАСС
-                Поддержка NFC
-                есть
-                
-                Память и процессор
-                Процессор
-                Qualcomm Snapdragon 8 Gen 3
-                Характеристики процессора
-                частота: 3390 МГц; количество ядер: 8; 1x3.39 ГГц Cortex-X4, 3x3.1 ГГц Cortex-A720, 2x2.9 ГГц Cortex-A720, 2x2.2 ГГц Cortex-A520; видеопроцессор: Adreno 750
-                Встроенная память
-                256 ГБ
-                Оперативная память
-                12 ГБ
-                Слот для карт памяти
-                нет
-                
-                Питание
-                Емкость аккумулятора
-                5000 мА⋅ч
-                Время в режиме воспроизведения видео
-                30 ч
-                Тип разъема для зарядки
-                USB-C
-                Функции зарядки
-                беспроводная зарядка, быстрая зарядка, реверсивная зарядка
-                Аккумулятор
-                несъемный</p>
-            <p class="price">Цена: 85000 руб.</p>
-            <button onclick="showContactInfo()">Купить</button>
-            <p id="contact-info" style="display: none;">Для покупки свяжитесь со мной по телефону: <a href="tel:+79229709497">+7 (922) 970-94-97</a></p>
-        </section>
+    <main class="product-container">
+        <div class="product-header">
+            <img src="Samsung Galaxy S24 Ultra.jpg" alt="Samsung Galaxy S24 Ultra" class="product-image">
+            <div class="product-title">
+                <span class="product-badge">Флагман</span>
+                <span class="product-badge">AI-функции</span>
+                <h2>Samsung Galaxy S24 Ultra</h2>
+                <p>12/256 ГБ, Titanium Violet, Dual nano SIM</p>
+                <div class="product-price">85 000 ₽</div>
+            </div>
+        </div>
+        
+        <div class="specs-grid">
+            <div class="spec-card">
+                <div class="spec-category">Основные характеристики</div>
+                <p><strong>Процессор:</strong> Snapdragon 8 Gen 3</p>
+                <p><strong>Память:</strong> 12/256 ГБ</p>
+                <p><strong>ОС:</strong> Android 14</p>
+                <p><strong>Гарантия:</strong> 24 мес.</p>
+            </div>
+            
+            <div class="spec-card">
+                <div class="spec-category">Экран</div>
+                <p><strong>Тип:</strong> Dynamic AMOLED 2X</p>
+                <p><strong>Диагональ:</strong> 6.8"</p>
+                <p><strong>Частота:</strong> 120Hz</p>
+                <p><strong>Защита:</strong> Gorilla Glass Victus 2</p>
+            </div>
+            
+            <div class="spec-card">
+                <div class="spec-category">Камеры</div>
+                <p><strong>Основная:</strong> 200 МП, OIS</p>
+                <p><strong>Телефото:</strong> 50 МП, 5x zoom</p>
+                <p><strong>Широкоуг.:</strong> 12 МП, 120°</p>
+                <p><strong>Портрет:</strong> 10 МП, 3x zoom</p>
+            </div>
+            
+            <div class="spec-card">
+                <div class="spec-category">Дополнительно</div>
+                <p><strong>Корпус:</strong> Титан</p>
+                <p><strong>Защита:</strong> IP68</p>
+                <p><strong>Зарядка:</strong> 45W + беспроводная</p>
+                <p><strong>S Pen:</strong> Встроенный</p>
+            </div>
+        </div>
+        
+        <div class="buy-section">
+            <label for="product-contact-toggle" class="button">Купить</label>
+            <input type="checkbox" id="product-contact-toggle" style="display: none;">
+            
+            <div class="contact-info">
+                <p>Для покупки свяжитесь по телефону:</p>
+                <p><a href="tel:+79229709497" style="color: #2c3e50; font-weight: bold;">+7 (922) 970-94-97</a></p>
+            </div>
+        </div>
+        
+        <div class="full-description">
+            <h3>Инновационный флагман Samsung</h3>
+            <p>Galaxy S24 Ultra с революционной 200 МП камерой и мощнейшим процессором Snapdragon 8 Gen 3. Первый смартфон с полноценной интеграцией искусственного интеллекта.</p>
+            
+            <h4>Ключевые особенности:</h4>
+            <ul>
+                <li>Экран Dynamic AMOLED 2X с рекордной яркостью</li>
+                <li>Профессиональная система камер с 5x оптическим зумом</li>
+                <li>Титановый корпус с защитой IP68</li>
+                <li>Встроенный S Pen с улучшенной отзывчивостью</li>
+                <li>Интеллектуальные AI-функции для фото и продуктивности</li>
+                <li>Аккумулятор 5000 мАч с быстрой зарядкой</li>
+            </ul>
+        </div>
     </main>
 
     <footer>
-        <p>&copy;Ильин Никита</p>
+        <p>&copy; Ильин Никита, 2024</p>
     </footer>
-
-    <script>
-        function showContactInfo() {
-            var contactInfoElement = document.getElementById("contact-info");
-            contactInfoElement.style.display = "block";
-        }
-    </script>
 </body>
 </html>
