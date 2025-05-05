@@ -5,13 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог телефонов - Магазин телефонов</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .catalog {
+            padding: 2rem;
+        }
+        
+        .phone-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1rem;
+            background: white;
+        }
+        
+        .phone-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .phone-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #e63946;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Магазин телефонов</h1>
         <nav>
             <a href="index.html">Главная</a>
-            <a href="catalog.html">Каталог</a>
+            <a href="catalog.html" class="active">Каталог</a>
             <a href="contacts.html">Контакты</a>
         </nav>
     </header>
@@ -21,50 +54,66 @@
             <h2>Все телефоны</h2>
             <div class="phone-grid">
                 <div class="phone-card">
-                    <a href="product1.html">
-                        <img src="Asus ROG Phone 6.jpg" alt="Asus ROG Phone 6">
-                    </a>
-                    <h3><a href="product1.html">Смартфон ASUS ROG Phone 6 16/512 ГБ Global, Dual nano SIM, черный</a></h3>
-                    <p class="price">90000 руб.</p>
+                    <div class="image-container">
+                        <a href="product1.html">
+                            <img src="Asus ROG Phone 6.jpg" alt="Asus ROG Phone 6" loading="lazy">
+                        </a>
+                    </div>
+                    <h3><a href="product1.html">ASUS ROG Phone 6 16/512 ГБ</a></h3>
+                    <p>Global, Dual nano SIM, черный</p>
+                    <p class="price">90 000 ₽</p>
                     <a href="product1.html" class="button">Подробнее</a>
                 </div>
                 <div class="phone-card">
-                    <a href="product2.html">
-                        <img src="Apple iPhone 15 Pro Max.jpg" alt="Apple iPhone 15 Pro Max">
-                    </a>
-                    <h3><a href="product2.html">Смартфон Apple iPhone 15 Pro Max 1 ТБ, Dual: nano SIM + eSIM, White Titanium / Белый Титан</a></h3>
-                    <p class="price">115000 руб.</p>
+                    <div class="image-container">
+                        <a href="product2.html">
+                            <img src="Apple iPhone 15 Pro Max.jpg" alt="Apple iPhone 15 Pro Max" loading="lazy">
+                        </a>
+                    </div>
+                    <h3><a href="product2.html">iPhone 15 Pro Max 1 ТБ</a></h3>
+                    <p>Dual: nano SIM + eSIM, White Titanium</p>
+                    <p class="price">115 000 ₽</p>
                     <a href="product2.html" class="button">Подробнее</a>
                 </div>
                 <div class="phone-card">
-                    <a href="product3.html">
-                        <img src="Samsung Galaxy S24 Ultra.jpg" alt="Samsung Galaxy S24 Ultra">
-                    </a>
-                    <h3><a href="product3.html">Смартфон Samsung Galaxy S24 Ultra 12/256 ГБ, Dual nano SIM, Titanium Violet</a></h3>
-                    <p class="price">85000 руб.</p>
+                    <div class="image-container">
+                        <a href="product3.html">
+                            <img src="Samsung Galaxy S24 Ultra.jpg" alt="Samsung Galaxy S24 Ultra" loading="lazy">
+                        </a>
+                    </div>
+                    <h3><a href="product3.html">Samsung Galaxy S24 Ultra</a></h3>
+                    <p>12/256 ГБ, Dual nano SIM, Titanium Violet</p>
+                    <p class="price">85 000 ₽</p>
                     <a href="product3.html" class="button">Подробнее</a>
                 </div>
                 <div class="phone-card">
-                    <a href="product4.html">
-                        <img src="OnePlus 11.jpg" alt="OnePlus 11">
-                    </a>
-                    <h3><a href="product4.html">Смартфон OnePlus 11 8/128Gb Titan Black (Global) (Черный) 2Sim</a></h3>
-                    <p class="price">63000 руб.</p>
+                    <div class="image-container">
+                        <a href="product4.html">
+                            <img src="OnePlus 11.jpg" alt="OnePlus 11" loading="lazy">
+                        </a>
+                    </div>
+                    <h3><a href="product4.html">OnePlus 11 8/128Gb</a></h3>
+                    <p>Titan Black (Global), 2Sim</p>
+                    <p class="price">63 000 ₽</p>
                     <a href="product4.html" class="button">Подробнее</a>
                 </div>
                 <div class="phone-card">
-                    <a href="product5.html">
-                        <img src="Google Pixel 7 Pro.jpg" alt="Google Pixel 7 Pro">
-                    </a>
-                    <h3><a href="product5.html">Смартфон Google Pixel 7 Pro 12/256Gb Snow (Белый) (Global) Sim+eSim</a></h3>
-                    <p class="price">50000 руб.</p>
+                    <div class="image-container">
+                        <a href="product5.html">
+                            <img src="Google Pixel 7 Pro.jpg" alt="Google Pixel 7 Pro" loading="lazy">
+                        </a>
+                    </div>
+                    <h3><a href="product5.html">Google Pixel 7 Pro 12/256Gb</a></h3>
+                    <p>Snow (Белый), Global, Sim+eSim</p>
+                    <p class="price">50 000 ₽</p>
                     <a href="product5.html" class="button">Подробнее</a>
                 </div>
             </div>
         </section>
     </main>
+    
     <footer>
-        <p>&copy;Ильин Никита</p>
+        <p>&copy; Ильин Никита, 2024</p>
     </footer>
 </body>
 </html>
