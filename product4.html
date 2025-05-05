@@ -3,8 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnePlus 11 - Подробная информация</title>
+    <title>OnePlus 11 8/128Gb - Купить в Кирове | Магазин телефонов</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Общие стили для всех продуктовых страниц */
+        .product-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .product-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .product-title {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .product-image {
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .product-badge {
+            background: #f5010c;
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-right: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .product-price {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin: 1.5rem 0;
+            font-weight: bold;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .spec-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .spec-category {
+            color: #7f8c8d;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .buy-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .contact-info {
+            background: #e8f4fd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            display: none;
+        }
+        
+        #product-contact-toggle:checked ~ .contact-info {
+            display: block;
+        }
+        
+        .full-description {
+            margin-top: 3rem;
+            line-height: 1.7;
+        }
+        
+        @media (max-width: 768px) {
+            .product-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .product-image {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,83 +119,83 @@
         </nav>
     </header>
 
-    <main>
-        <section class="product-details">
-            <h2>Смартфон OnePlus 11 8/128Gb Titan Black (Global) (Черный) 2Sim</h2>
-            <img src="OnePlus 11.jpg" alt="OnePlus 11">
-            <p><strong>Характеристики:</strong>Артикул Маркета
-                51147377728
-                Бренд
-                OnePlus
-                Цвет товара
-                черный
-                Версия
-                для других стран
-                Версия ОС на начало продаж
-                Android 13
-                Тип корпуса
-                классический
-                Материал корпуса
-                стекло
-                Степень защиты
-                IP64
-                Количество SIM-карт
-                Dual nano SIM
-                Вес
-                205 г
-                
-                Экран
-                Особенности экрана
-                вырез на экране, сенсорный экран, устойчивое к царапинам стекло, цветной экран
-                Частота обновления экрана
-                120 Гц
-                
-                Мультимедийные возможности
-                Функции камеры
-                автофокусировка, оптическая стабилизация, основная камера, тыловая вспышка, фронтальная камера
-                Характеристики основной камеры
-                ƒ/1.8,угол обзора: 84°
-                Характеристики основной камеры 2
-                ƒ/2.2,48Мп,угол обзора: 115°
-                Характеристики основной камеры 3
-                32Мп,ƒ/2.,угол обзора: 49°
-                
-                Связь
-                Стандарт связи
-                2G, 3G, 4G LTE
-                Беспроводные интерфейсы
-                Bluetooth, NFC, Wi-Fi
-                
-                Память и процессор
-                Процессор
-                Qualcomm Snapdragon 8 Gen2
-                Характеристики процессора
-                частота: 3200 МГц; количество ядер: 8; 1 x 3.2 ГГц Cortex-X3,2 x 2.8 ГГц Cortex-A715,2 x 2.8 ГГц Cortex-A710,3 x 2.0 ГГц Cortex-A510; видеопроцессор: Adreno 740
-                Встроенная память
-                128 ГБ
-                Оперативная память
-                8 ГБ
-                
-                Питание
-                Тип разъема для зарядки
-                USB-C
-                Функции зарядки
-                быстрая зарядка</p>
-            <p class="price">Цена: 63000 руб.</p>
-            <button onclick="showContactInfo()">Купить</button>
-            <p id="contact-info" style="display: none;">Для покупки свяжитесь со мной по телефону: <a href="tel:+79229709497">+7 (922) 970-94-97</a></p>
-        </section>
+    <main class="product-container">
+        <div class="product-header">
+            <img src="OnePlus 11.jpg" alt="OnePlus 11" class="product-image">
+            <div class="product-title">
+                <span class="product-badge">Флагман</span>
+                <span class="product-badge">Global версия</span>
+                <h2>OnePlus 11 8/128Gb</h2>
+                <p>Titan Black, Dual nano SIM</p>
+                <div class="product-price">63 000 ₽</div>
+            </div>
+        </div>
+        
+        <div class="specs-grid">
+            <div class="spec-card">
+                <div class="spec-category">Основные характеристики</div>
+                <p><strong>Процессор:</strong> Snapdragon 8 Gen 2</p>
+                <p><strong>Память:</strong> 8/128 ГБ</p>
+                <p><strong>ОС:</strong> Android 13</p>
+                <p><strong>Гарантия:</strong> 12 мес.</p>
+            </div>
+            
+            <div class="spec-card">
+                <div class="spec-category">Экран</div>
+                <p><strong>Тип:</strong> AMOLED LTPO 3.0</p>
+                <p><strong>Диагональ:</strong> 6.7"</p>
+                <p><strong>Частота:</strong> 120Hz</p>
+                <p><strong>Разрешение:</strong> 3216×1440</p>
+            </div>
+            
+            <div class="spec-card">
+                <div class="spec-category">Камеры</div>
+                <p><strong>Основная:</strong> 50 МП, ƒ/1.8, OIS</p>
+                <p><strong>Широкоуг.:</strong> 48 МП, 115°</p>
+                <p><strong>Портретная:</strong> 32 МП, 2x zoom</p>
+                <p><strong>Фронтальная:</strong> 16 МП</p>
+            </div>
+            
+            <div class="spec-card">
+                <div class="spec-category">Дополнительно</div>
+                <p><strong>Корпус:</strong> Стекло + металл</p>
+                <p><strong>Защита:</strong> IP64</p>
+                <p><strong>Зарядка:</strong> 100W (80% за 15 мин)</p>
+                <p><strong>Аккумулятор:</strong> 5000 мАч</p>
+            </div>
+        </div>
+        
+        <div class="buy-section">
+            <label for="product-contact-toggle" class="button">Купить</label>
+            <input type="checkbox" id="product-contact-toggle" style="display: none;">
+            
+            <div class="contact-info">
+                <p>Для покупки свяжитесь по телефону:</p>
+                <p><a href="tel:+79229709497" style="color: #2c3e50; font-weight: bold;">+7 (922) 970-94-97</a></p>
+            </div>
+        </div>
+        
+        <div class="full-description">
+            <h3>Флагманский смартфон с революционной зарядкой</h3>
+            <p>OnePlus 11 сочетает в себе мощный процессор Snapdragon 8 Gen 2, профессиональную систему камер Hasselblad и фирменную сверхбыструю зарядку 100W.</p>
+            
+            <h4>Ключевые особенности:</h4>
+            <ul>
+                <li>Экран AMOLED LTPO 3.0 с адаптивной частотой 1-120 Гц</li>
+                <li>Тройная камера с оптикой Hasselblad</li>
+                <li>100W SuperVOOC зарядка (0-100% за 25 минут)</li>
+                <li>Мощный процессор Snapdragon 8 Gen 2</li>
+                <li>Стереодинамики с Dolby Atmos</li>
+                <li>Кислородная OS на базе Android 13</li>
+            </ul>
+            
+            <h4>Комплектация:</h4>
+            <p>Смартфон, кабель USB-C, адаптер 100W, защитный чехол, скрепка для SIM-лотка, документация</p>
+        </div>
     </main>
 
     <footer>
-        <p>&copy;Ильин Никита</p>
+        <p>&copy; Ильин Никита, 2024</p>
     </footer>
-
-    <script>
-        function showContactInfo() {
-            var contactInfoElement = document.getElementById("contact-info");
-            contactInfoElement.style.display = "block";
-        }
-    </script>
 </body>
 </html>
